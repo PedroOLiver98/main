@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Forca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Jogo da Forca</h1>
+  </header>
+
+  <!-- Seletor de nível -->
+  <label for="level">Escolha a dificuldade:</label>
+  <select id="level" class="level-select">
+    <option value="facil">Fácil</option>
+    <option value="medio" selected>Médio</option>
+    <option value="dificil">Difícil</option>
+  </select>
+
+  <button class="new">Novo Jogo</button>
+
+  <main>
+    <article class="content-img">
+      <img src="img1.png" width="250px" alt="Jogo da forca">
+    </article>
+    
+    <article class="content">
+      <div class="guess-word"></div>
+      <div class="clue"></div>
+
+      <!-- Campo para chutar a palavra completa -->
+      <div class="guess-input-container" style="display: none;">
+        <input type="text" class="guess-input" placeholder="Digite a palavra">
+        <button class="guess-btn">Chutar</button>
+      </div>
+
+      <div class="btns"></div>
+    </article>
+  </main>
+  <div class="guess-input-container">
+    <input type="text" class="guess-input" placeholder="Chute a palavra">
+    <button class="guess-btn">Chutar</button>
+  </div>
+<section>
+  <footer>
+    <p>&copy; 2025 - Desenvolvido pela equipe: Pedro Augusto, Thyago Lima, Juarez Dias, Valdevina, Pedro Valerio, Maria Aparecida.</p>
+  </footer>
+</section>
+
+
+  <script src="script.js" type="module"></script>
+   <!--Adicionar futuramente uma informação que indique quem são os fundadores do mini-game-->
+</body>
+</html>
